@@ -150,17 +150,6 @@
     // Uncaught ReferenceError: x is not defined
     ```
 
-* 由于一些安全原因，在作用域 eval() 创建的变量不能被调用：
-
-    实例：
-
-    ```js
-    "use strict";
-    eval ("var x = 2");
-    alert (x);
-    // Uncaught ReferenceError: x is not defined
-    ```
-
 * 禁止this关键字指向全局对象。
 
     实例：
