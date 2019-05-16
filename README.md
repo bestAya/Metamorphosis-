@@ -10,4 +10,4 @@
 
 ## 服务器
 
-* ### 服务器 > Linux(未完成)
+* ### 服务器 > [Linux(未完成)](https://github.com/bestAya/Metamorphosis-/blob/master/linux/index.md)
