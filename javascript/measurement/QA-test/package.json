@@ -1,25 +1,33 @@
 {
-  "name": "QA-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "unit": "karma start"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "karma": "^4.1.0",
-    "karma-coverage": "^1.1.2",
-    "mocha": "^6.1.4"
-  },
-  "devDependencies": {
-    "jasmine-core": "^3.4.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-jasmine": "^2.0.1",
-    "mochawesome": "^3.1.2"
-  }
+    "name": "QA-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "unit": "karma start",
+        "react-unit": "react-scripts test --env=jsdom"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "karma": "^4.1.0",
+        "karma-coverage": "^1.1.2",
+        "mocha": "^6.1.4",
+        "react": "^16.8.6"
+    },
+    "devDependencies": {
+        "jasmine-core": "^3.4.0",
+        "jest-dom": "^3.2.2",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-jasmine": "^2.0.1",
+        "mochawesome": "^3.1.2",
+        "puppeteer": "^1.16.0",
+        "react-dom": "^16.8.6",
+        "react-scripts": "^3.0.1",
+        "react-testing-library": "^7.0.1",
+        "rize": "^0.8.0"
+    }
 }
