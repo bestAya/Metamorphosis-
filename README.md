@@ -11,3 +11,7 @@
 ## 服务器
 
 * ### 服务器 > [Linux(未完成)](https://github.com/bestAya/Metamorphosis-/blob/master/linux/index.md)
+
+## JavaScript与OA工程师
+
+* ### JavaScript > [自动化测试(未完成)](https://github.com/bestAya/Metamorphosis-/blob/master/javascript/measurement/QAtest.md)
