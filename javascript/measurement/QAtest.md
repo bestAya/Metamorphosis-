@@ -34,13 +34,155 @@
 * 单元测试 小的函数
   * `karma`
   * `karma-coverage`
+  * 实例
+
+    ```js
+    npm i karma
+    npm install karma karma-coverage --save-dev
+    npm install karma-jasmine karma-chrome-launcher jasmine-core --save-dev
+    ```
+
+    ```js
+    describe('测试基本函数Api',function(){
+    it("+1函数的应用",function(){
+        expect(window.add(1)).toBe(1);
+        expect(window.add(2)).toBe(3);
+        })  
+    })
+    ```
+
+    ```js
+    // karma.conf.js
+    module.exports = function(config) {
+    config.set({
+        files: [
+        'src/**/*.js',
+        'test/**/*.js'
+        ],
+        // coverage reporter generates the coverage
+        reporters: ['progress', 'coverage'],
+        preprocessors: {
+        // source files, that you wanna generate coverage for
+        // do not include tests or libraries
+        // (these files will be instrumented by Istanbul)
+        'src/**/*.js': ['coverage']
+        },
+        // optionally, configure the reporter
+        coverageReporter: {
+        type : 'html',
+        dir : 'coverage/'
+        }
+    });
+    };
+    ```
+
 * 单元测试 小的组件
+  * react 组件测试
+    * `jest.js`
+    * 实例
+
+      ```js
+        npm install --save-dev jest-dom
+        npm i react-scripts
+      ```
+
+      ```js
+        //index.js
+        import React from "react";
+
+        export const App = () => {
+        return (
+            <div>
+            <p data-testid="js-p">你很优秀</p>
+            <ul data-testid="js-ul">
+                <li>Javascirpt</li>
+                <li>css</li>
+            </ul>
+            </div>
+        );
+        };
+        //index.spec.js
+        import React from 'react';
+        import { render, cleanup, fireEvent } from 'react-testing-library';
+        import { App } from "./index"
+
+        afterEach(cleanup);
+
+        describe('测试单个组件', function() {
+            it("基本基本组件", function() {
+                const { getByTestId } = render( < App / > );
+                const [ul, nav] = [getByTestId('js-ul'), getByTestId('js-p')];
+                expect(ul.children.length).toBe(2);
+            })
+        })
+      ```
+
+      ```js
+      "react-unit": "react-scripts test --env=jsdom" //测试
+      ```
+
 * 接口测试 确保数据
   * `mocha`
   * `mochawesome`
+  * 实例
+
+    ```js
+    npm i mocha
+    npm install --save-dev mochawesome
+    ```
+
+    ```js
+    const Mocha = require("mocha");
+    const mocha = new Mocha({
+        reporter: 'mochawesome',
+        reporterOptions: {
+        reportDir: './docs/mochawesome-reporter',
+        }
+    });
+    mocha.addFile('./tests/service/router.spec.js');
+    mocha.run(function(){
+        console.log("done");
+        process.exit();//退出
+    })
+    ```
+
+    ```js
+    //执行
+        node ./[文件名]/[文件名].spec.js
+    ```
+
 * e2e测试 确保功能
+  * `rize.js`
+  * 实例
+
+    ```js
+    npm install --save-dev puppeteer rize
+    ```
+
+    ```js
+    const Rize = require('rize');
+    const rize = new Rize()
+    rize
+    .goto('https://github.com/')//测试地址
+    .type('input.header-search-input', 'node')//搜索框的选择器是 input.header-search-input输入node
+    .press('Enter')//用ENter来进行提交
+    .waitForNavigation()//
+    .assertSee('Node.js')//检查当前页面是否包含指定Node.js
+    .end() // 别忘了调用 `end` 方法来退出浏览器！
+    ```
+
 * UI测试  确保样式
+
   * `backstopjs` 
+  * 实例
+
+    ```js
+        npm install -g backstopjs
+    ```
+
+    ```js
+        backstop init -> backstop.json ->'设置设备尺寸' -> '调整对比地址' -> backstop test
+    ````
 
 * f2etest 确保多浏览器测试文档
 
@@ -60,17 +202,3 @@
 ## 安全测试
 
 ## 功能测试
-
-
-
-```js
-//遇到分支 需要装覆盖并检查
-
-//测试 
-
-//ui 测试
-backstopjs
-PhantomCSS
-
-
-```

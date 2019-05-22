@@ -3,8 +3,8 @@ report({
   "tests": [
     {
       "pair": {
-        "reference": "../../../backstop_data/bitmaps_reference/kred_map_0_document_0_phone.png",
-        "test": "../../../backstop_data/bitmaps_test/20190522-002308/kred_map_0_document_0_phone.png",
+        "reference": "..\\..\\..\\backstop_data\\bitmaps_reference\\kred_map_0_document_0_phone.png",
+        "test": "..\\..\\..\\backstop_data\\bitmaps_test\\20190522-093803\\kred_map_0_document_0_phone.png",
         "selector": "document",
         "fileName": "kred_map_0_document_0_phone.png",
         "label": "map",
@@ -20,17 +20,17 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.79",
-          "analysisTime": 20
+          "misMatchPercentage": "2.07",
+          "analysisTime": 16
         },
-        "diffImage": "../../../backstop_data/bitmaps_test/20190522-002308/failed_diff_kred_map_0_document_0_phone.png"
+        "diffImage": "..\\..\\..\\backstop_data\\bitmaps_test\\20190522-093803\\failed_diff_kred_map_0_document_0_phone.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../../../backstop_data/bitmaps_reference/kred_map_0_document_1_ipad.png",
-        "test": "../../../backstop_data/bitmaps_test/20190522-002308/kred_map_0_document_1_ipad.png",
+        "reference": "..\\..\\..\\backstop_data\\bitmaps_reference\\kred_map_0_document_1_ipad.png",
+        "test": "..\\..\\..\\backstop_data\\bitmaps_test\\20190522-093803\\kred_map_0_document_1_ipad.png",
         "selector": "document",
         "fileName": "kred_map_0_document_1_ipad.png",
         "label": "map",
@@ -40,7 +40,7 @@ report({
         "referenceUrl": "",
         "expect": 0,
         "viewportLabel": "ipad",
-        "error": "Reference file not found /Users/zhangzhenya/Desktop/京程一灯/Metamorphosis-/javascript/measurement/QA-test/backstop_data/bitmaps_reference/kred_map_0_document_1_ipad.png"
+        "error": "Reference file not found C:\\Users\\Admin\\Desktop\\新建文件夹\\Metamorphosis-\\javascript\\measurement\\QA-test\\backstop_data\\bitmaps_reference\\kred_map_0_document_1_ipad.png"
       },
       "status": "fail"
     }
