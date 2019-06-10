@@ -8,9 +8,15 @@
 * ### [基础 > ES5基础知识](https://github.com/bestAya/Metamorphosis-/blob/master/javascript/ES5/index.md)
 * ### 基础 > ES6基础知识(未完成)
 
+## 进阶
+
+* ### [函数式编程(未完成)](https://github.com/bestAya/Metamorphosis-/blob/master/javascript/functional/index.md)
+* ### [Node.js的72般变化(未完成)]
+
 ## 服务器
 
 * ### 服务器 > [Linux(未完成)](https://github.com/bestAya/Metamorphosis-/blob/master/linux/index.md)
+* ### [Http协议](https://github.com/bestAya/Metamorphosis-/blob/master/http/index.md)
 
 ## JavaScript与OA工程师
 
