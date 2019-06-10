@@ -25,9 +25,9 @@ mysql> set names utf8;
 mysql> SELECT name FROM websites;
 ```
 
-# MySQL基本语法
+### MySQL基本语法
 
-* ### MySQL连接
-* ### MySQL创建数据库、创建数据表
-* ### MySQL插入数据
-* ### MySQL语句
+* ##### MySQL连接
+* ##### MySQL创建数据库、创建数据表
+* ##### MySQL插入数据
+* ##### MySQL语句
